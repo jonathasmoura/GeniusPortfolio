@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace GP.Domain.Interfaces
 {
-	public interface IUnitOfWork
+	public interface IUnitOfWork : IDisposable
 	{
+		ICategoryRepository Categories { get; }
+
+		int Save();
 	}
 }

@@ -21,5 +21,6 @@ namespace GP.Domain.Entities.DomainBase
 		public DateTime? ActivationDate { get; set; }
 		public DateTime? InativationDate { get; set; }
 		public DateTime Created { get; set; }
+
 	}
 }
